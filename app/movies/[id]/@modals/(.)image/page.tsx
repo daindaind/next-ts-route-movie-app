@@ -18,7 +18,6 @@ function InterceptImagePage({ params }: InterceptImagePageProps) {
 	return (
 		<ModalBackdrop>
 			<dialog className="modal" open>
-				<h2>인터셉트 라우트</h2>
 				<div className="fullscreen-image">
 					<img src={`${newsItem.image}`} alt={newsItem.title} />
 				</div>

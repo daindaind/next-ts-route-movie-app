@@ -23,6 +23,8 @@ function MoviesDetailPage({ params }: MoviesDetailPageProps) {
 					<img src={`${movieItem.image}`} alt={movieItem.title} />
 				</Link>
 				<h1>{movieItem.title}</h1>
+				<p>{movieItem.creator}</p>
+				<p>{movieItem.instructions}</p>
 			</header>
 		</article>
 	);

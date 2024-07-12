@@ -11,12 +11,16 @@ function MoviesList({ movies }: MoviesListProps) {
 		<ul id="news-list">
 			{movies.map(movieData => (
 				<li key={movieData.id}>
-					<Link href={`/movies/${movieData.slug}`}>
+					<Link href={`/movies/${movieData.slug}`} className='movie-list-link'>
 						<img
 							src={`${movieData.image}`}
 							alt={movieData.title}
+							width={250}
+							height={350}
+							style={{borderRadius: 5}}
 						/>
-						<span>{movieData.title}</span>
+						<span className='movie-title'>{movieData.title}</span>
+						<p>{movieData.summary}</p>
 					</Link>
 				</li>
 			))}
